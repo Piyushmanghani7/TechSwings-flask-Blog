@@ -1,0 +1,15 @@
+{
+  "parameters": 
+  {
+     "live_server":"true" ,
+     "local_url" :"mysql://root:@localhost/piyushblog" ,
+     "production_url" : "mysql://root:@localhost/piyushblog",
+     "blog_name":"Tech Swings",
+     "blogname":"TechSwings",
+     "subtitle_name":"Coding Blog By TechSwings",
+     "no_of_post": 5,
+     "admin":"piyush@1234",
+     "admin_answer":"piyush@1234"
+
+  }
+}

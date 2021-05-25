@@ -1,0 +1,57 @@
+
+
+{% extends 'base.html' %} {% block body %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('   {{ url_for('static',filename='assets/img/contact-bg2.jpg')}}')"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>Log-In/Sig-In</h1>
+          <span class="subheading">Log-In , Fill out the form below & redirect to the admin pannel directly.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p>
+        Log-In , Fill out the form below & redirect to the admin pannel directly.
+      </p>
+      <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work.-->
+      <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address!-->
+      <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally!-->
+      <form id="form-signin" name="form-signin" action="/login" method="POST" novalidate>
+
+        
+    <h1 class="h3 mb-3 fw-normal ">Please sign in</h1>
+
+
+        
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" name="pass" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+          
+        <br />
+        <div id="success"></div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
